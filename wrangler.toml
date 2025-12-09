@@ -1,0 +1,17 @@
+name = "near-tracking"
+main = "src/index.ts"
+compatibility_date = "2023-12-18"
+
+# Cron trigger - runs every 6 hours
+[triggers]
+crons = ["0 */6 * * *"]
+
+# KV namespace binding
+[[kv_namespaces]]
+binding = "RELEASE_TRACKER"
+id = "YOUR_KV_NAMESPACE_ID"
+preview_id = "YOUR_PREVIEW_KV_NAMESPACE_ID"
+
+# Environment variables (these should be set via wrangler secret put)
+# TG_BOT_TOKEN - Telegram Bot Token
+# TG_CHAT_ID - Telegram Chat ID
