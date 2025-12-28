@@ -67,11 +67,32 @@ def get_latest_release(repo, token=None):
     return None
 
 
-def create_issue(repo_name, release_info, token=None):
-    """Create a GitHub issue for a new release (optional)."""
-    # This would create an issue in the current repository
-    # You can implement this if you want automatic issue creation
-    pass
+def send_telegram_notification(message, bot_token=None, chat_id=None):
+    """Send notification to Telegram."""
+    if not bot_token or not chat_id:
+        print("  Telegram credentials not configured, skipping notification")
+        return False
+
+    url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+    payload = {
+        'chat_id': chat_id,
+        'text': message,
+        'parse_mode': 'HTML',
+        'disable_web_page_preview': False
+    }
+
+    try:
+        response = requests.post(url, json=payload, timeout=10)
+        if response.status_code == 200:
+            print("  Telegram notification sent successfully")
+            return True
+        else:
+            print(f"  Failed to send Telegram notification: {response.status_code}")
+            print(f"  Response: {response.text}")
+            return False
+    except Exception as e:
+        print(f"  Error sending Telegram notification: {e}")
+        return False
 
 
 def main():
@@ -79,6 +100,10 @@ def main():
     config = load_config()
     releases = load_releases()
     token = os.getenv('GITHUB_TOKEN')
+
+    # Get Telegram credentials
+    telegram_bot_token = os.getenv('TELEGRAM_BOT_TOKEN')
+    telegram_chat_id = os.getenv('TELEGRAM_CHAT_ID')
 
     new_releases_found = []
 
@@ -125,6 +150,31 @@ def main():
             if item['release']['published_at']:
                 print(f"  Published: {item['release']['published_at']}")
         print("\n" + "=" * 60)
+
+        # Send Telegram notifications for each new release
+        if telegram_bot_token and telegram_chat_id:
+            print("\nSending Telegram notifications...")
+            for item in new_releases_found:
+                release = item['release']
+
+                # Truncate release notes if too long
+                body = release.get('body', '')
+                if len(body) > 500:
+                    body = body[:500] + "..."
+
+                # Format message with HTML
+                message = f"🚀 <b>New Release: {item['project']}</b>\n\n"
+                message += f"<b>Version:</b> {release['tag_name']}\n"
+
+                if release.get('published_at'):
+                    message += f"<b>Published:</b> {release['published_at']}\n"
+
+                message += f"\n<a href=\"{release['html_url']}\">View Release</a>\n"
+
+                if body:
+                    message += f"\n<b>Release Notes:</b>\n{body}"
+
+                send_telegram_notification(message, telegram_bot_token, telegram_chat_id)
 
         # Update summary file
         summary_file = Path('RELEASES_SUMMARY.md')
