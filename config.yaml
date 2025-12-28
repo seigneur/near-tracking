@@ -1,0 +1,12 @@
+projects:
+  - name: "Aztec CLI"
+    repo: "AztecProtocol/aztec-packages"
+    description: "Aztec CLI tools for building privacy-focused applications"
+
+  - name: "NEAR Protocol"
+    repo: "near/nearcore"
+    description: "NEAR Protocol node implementation"
+
+  - name: "Nethermind"
+    repo: "NethermindEth/nethermind"
+    description: "Nethermind Ethereum client"
