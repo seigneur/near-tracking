@@ -152,29 +152,40 @@ def main():
         print("\n" + "=" * 60)
 
         # Send Telegram notifications for each new release
+        # Wrapped in try-except to ensure pipeline continues even if notifications fail
         if telegram_bot_token and telegram_chat_id:
             print("\nSending Telegram notifications...")
-            for item in new_releases_found:
-                release = item['release']
+            try:
+                for item in new_releases_found:
+                    try:
+                        release = item['release']
 
-                # Truncate release notes if too long
-                body = release.get('body', '')
-                if len(body) > 500:
-                    body = body[:500] + "..."
+                        # Truncate release notes if too long
+                        body = release.get('body', '')
+                        if len(body) > 500:
+                            body = body[:500] + "..."
 
-                # Format message with HTML
-                message = f"🚀 <b>New Release: {item['project']}</b>\n\n"
-                message += f"<b>Version:</b> {release['tag_name']}\n"
+                        # Format message with HTML
+                        message = f"🚀 <b>New Release: {item['project']}</b>\n\n"
+                        message += f"<b>Version:</b> {release['tag_name']}\n"
 
-                if release.get('published_at'):
-                    message += f"<b>Published:</b> {release['published_at']}\n"
+                        if release.get('published_at'):
+                            message += f"<b>Published:</b> {release['published_at']}\n"
 
-                message += f"\n<a href=\"{release['html_url']}\">View Release</a>\n"
+                        message += f"\n<a href=\"{release['html_url']}\">View Release</a>\n"
 
-                if body:
-                    message += f"\n<b>Release Notes:</b>\n{body}"
+                        if body:
+                            message += f"\n<b>Release Notes:</b>\n{body}"
 
-                send_telegram_notification(message, telegram_bot_token, telegram_chat_id)
+                        send_telegram_notification(message, telegram_bot_token, telegram_chat_id)
+                    except Exception as e:
+                        # Log error but continue with other notifications
+                        print(f"  Error processing Telegram notification for {item['project']}: {e}")
+                        continue
+            except Exception as e:
+                # Catch any unexpected errors in the Telegram section
+                print(f"  Telegram notification section failed: {e}")
+                print("  Continuing with workflow...")
 
         # Update summary file
         summary_file = Path('RELEASES_SUMMARY.md')
