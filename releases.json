@@ -1,0 +1,23 @@
+{
+  "AztecProtocol/aztec-packages": {
+    "tag_name": "v2.1.9",
+    "name": "v2.1.9",
+    "published_at": "2025-12-08T14:32:51Z",
+    "html_url": "https://github.com/AztecProtocol/aztec-packages/releases/tag/v2.1.9",
+    "body": "## [2.1.9](https://github.com/AztecProtocol/aztec-packages/compare/v2.1.8...v2.1.9) (2025-12-07)\n\n\n### Miscellaneous\n\n* Accumulated backports to v2 ([#18660](https://github.com/AztecProtocol/aztec-packages/issues/18660)) ([dd97b78](https://github.com/AztecProtocol/aztec-packages/commit/dd97b789b3a7b0768287e95efc026a74f7861805))\n* configure git in auto-tag ([#18602](https://github.com/AztecProtocol/aztec-packages/issues/18602)) ([90c2810](https://github.com/AztecProtocol/aztec-packages/commit/90c28108a8966204985bf8b24fb9bf59412ebb11))\n* fix unbound var ([#18607](https://github.com/AztecProtocol/aztec-packages/issues/18607)) ([6e5a9fc](https://github.com/AztecProtocol/aztec-packages/commit/6e5a9fcdf0deaf2e074c5ea8661c235349af4fe2))\n* run fusaka test ([0517a88](https://github.com/AztecProtocol/aztec-packages/commit/0517a884299a0c9737297b98faf509d80b0d77c8))"
+  },
+  "near/nearcore": {
+    "tag_name": "2.10.3",
+    "name": "2.10.3",
+    "published_at": "2025-12-16T17:24:37Z",
+    "html_url": "https://github.com/near/nearcore/releases/tag/2.10.3",
+    "body": "```\r\nCODE_COLOR: CODE_GREEN_MAINNET\r\nRELEASE_VERSION: 2.10.3\r\nPROTOCOL_UPGRADE: FALSE\r\nDATABASE_UPGRADE: FALSE\r\nSECURITY_UPGRADE: FALSE\r\n```\r\n\r\nThis release includes the following on top of 2.10.2:\r\n- Optimize the network traffic involved in distributing state snapshot information between nodes.\r\n- Optimize data copying to make sure archival node can keep up with the chain.\r\n\r\nWhile this release is marked as `CODE_GREEN`, it contains optimizations enabling substantial cost savings associated with state sync network traffic. We strongly encourage all node operators to apply this patch.\r\n"
+  },
+  "NethermindEth/nethermind": {
+    "tag_name": "1.35.8",
+    "name": "v1.35.8",
+    "published_at": "2025-12-19T13:29:20Z",
+    "html_url": "https://github.com/NethermindEth/nethermind/releases/tag/1.35.8",
+    "body": "# Release Notes\r\n\r\n## Overview\r\n\r\n- Optimized `getProofs` RPC endpoints for better performance and efficiency. \r\n- Added build-time signing of release artifacts to improve release security and authenticity.\r\n\r\n### Full Changelog\r\n\r\nhttps://github.com/NethermindEth/nethermind/compare/1.35.7\u20261.35.8\r\n\r\n## What's Changed\r\n\r\n- Fix/limit get proof by @LukaszRozmej in #9967 \r\n- Sign release builds by @rubo in #9937 \r\n\r\n#### Build signatures\r\n\r\nThe packages are signed with the following OpenPGP key: `AD12 7976 5093 C675 9CD8 A400 24A7 7461 6F1E 617E`\r\nFor verification instructions, see the [docs](https://docs.nethermind.io/get-started/installing-nethermind#signatures)."
+  }
+}
