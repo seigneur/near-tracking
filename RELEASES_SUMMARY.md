@@ -1,24 +1,26 @@
 # Latest Releases
 
-*Last updated: 2025-12-29 00:02:39 UTC*
+*Last updated: 2026-01-09 00:01:56 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v2.1.9
+**Latest Version:** v3.0.1
 
-**Published:** 2025-12-08T14:32:51Z
+**Published:** 2026-01-08T11:15:23Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v2.1.9
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v3.0.1
 
 **Release Notes:**
 
-## [2.1.9](https://github.com/AztecProtocol/aztec-packages/compare/v2.1.8...v2.1.9) (2025-12-07)
+## [3.0.1](https://github.com/AztecProtocol/aztec-packages/compare/v3.0.0...v3.0.1) (2026-01-08)
 
 
-### Miscellaneous
+### � BREAKING CHANGES
 
-* Accumulated backports to v2 ([#18660](https://github.com/AztecProtocol/aztec-packages/issues/18660)) ([dd97b78](https://github.com/AztecProtocol/aztec-packages/commit/dd97b789b3a7b0768287e95efc026a74f7861805))
-* configure git in auto-tag ([#18602](https://github.com/AztecProtocol/aztec-packages/issues/18602)) ([90c2810](https://github.com/AztecProtocol/aztec-packages/commit/90c
+* Fix AVM VK in the recursive verifier ([#18923](https://github.com/AztecProtocol/aztec-packages/issues/18923))
+* Fix AVM VK in the recursive verifier ([#18923](https://github.com/AztecProtocol/aztec-packages/issues/18923))
+* Fix AVM VK in the recursive verifier ([#18923](https://github.com/AztecProtocol/aztec-packages/issues/18923))
+* Fix AVM VK in the recursive verifier ([
 
 ---
 
