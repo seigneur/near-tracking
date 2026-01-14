@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-01-09 00:01:56 UTC*
+*Last updated: 2026-01-14 00:02:26 UTC*
 
 ## Aztec CLI
 
@@ -26,59 +26,48 @@
 
 ## NEAR Protocol
 
-**Latest Version:** 2.10.3
+**Latest Version:** 2.10.4
 
-**Published:** 2025-12-16T17:24:37Z
+**Published:** 2026-01-13T15:00:28Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.10.3
+**URL:** https://github.com/near/nearcore/releases/tag/2.10.4
 
 **Release Notes:**
 
 ```
-CODE_COLOR: CODE_GREEN_MAINNET
-RELEASE_VERSION: 2.10.3
+CODE_COLOR: CODE_RED_MAINNET
+RELEASE_VERSION: 2.10.4
 PROTOCOL_UPGRADE: FALSE
 DATABASE_UPGRADE: FALSE
-SECURITY_UPGRADE: FALSE
+SECURITY_UPGRADE: TRUE
 ```
 
-This release includes the following on top of 2.10.2:
-- Optimize the network traffic involved in distributing state snapshot information between nodes.
-- Optimize data copying to make sure archival node can keep up with the chain.
-
-While this release is marked as `CODE_GREEN`, it contains optimizations enabling substantial cost savings associated wit
+This release fixes critical flaws in network code that could cause node crash.
+Upgrade as soon as possible to avoid node downtime.
 
 ---
 
 ## Nethermind
 
-**Latest Version:** 1.35.8
+**Latest Version:** 1.36.0
 
-**Published:** 2025-12-19T13:29:20Z
+**Published:** 2026-01-13T13:25:38Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.35.8
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.36.0
 
 **Release Notes:**
 
-# Release Notes
+# Release notes
 
-## Overview
+This release brings over 416 improvements across 1821 files; focusing on **operator ergonomics**, and **RPC / execution correctness hardening**, plus a steady stream of performance improvements. It also includes a couple of **intentional breaking changes** via the removal of obsolete configs/modules.
 
-- Optimized `getProofs` RPC endpoints for better performance and efficiency. 
-- Added build-time signing of release artifacts to improve release security and authenticity.
+## Breaking changes
 
-### Full Changelog
+### Config migrations removed (obsolete config cleanup)
 
-https://github.com/NethermindEth/nethermind/compare/1.35.7…1.35.8
+The old config-migration path was removed as part of an “obsolete config” cleanup (#9435):
 
-## What's Changed
 
-- Fix/limit get proof by @LukaszRozmej in #9967 
-- Sign release builds by @rubo in #9937 
-
-#### Build signatures
-
-The packages are signed with the following OpenPGP key: `AD
 
 ---
 
