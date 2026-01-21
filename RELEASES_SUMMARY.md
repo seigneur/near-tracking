@@ -1,46 +1,50 @@
 # Latest Releases
 
-*Last updated: 2026-01-15 00:02:00 UTC*
+*Last updated: 2026-01-21 00:02:25 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v3.0.2
+**Latest Version:** v3.0.3
 
-**Published:** 2026-01-14T14:40:47Z
+**Published:** 2026-01-20T19:46:10Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v3.0.2
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v3.0.3
 
 **Release Notes:**
 
-## [3.0.2](https://github.com/AztecProtocol/aztec-packages/compare/v3.0.1...v3.0.2) (2026-01-12)
+## [3.0.3](https://github.com/AztecProtocol/aztec-packages/compare/v3.0.2...v3.0.3) (2026-01-15)
 
 
-### Bug Fixes
+### Miscellaneous
 
-* node request from `PXE` crossing `MAX_RPC_LIMIT` ([#19516](https://github.com/AztecProtocol/aztec-packages/issues/19516)) ([4a29a70](https://github.com/AztecProtocol/aztec-packages/commit/4a29a70d171df337fba51ab62567c853f84fca68))
+* fix bot accumulating many recipients ([#19633](https://github.com/AztecProtocol/aztec-packages/issues/19633)) ([e40a73d](https://github.com/AztecProtocol/aztec-packages/commit/e40a73d8df02ed6ccd283966b62e57de4d032082))
 
 ---
 
 ## NEAR Protocol
 
-**Latest Version:** 2.10.4
+**Latest Version:** 2.10.5
 
-**Published:** 2026-01-13T15:00:28Z
+**Published:** 2026-01-20T18:43:08Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.10.4
+**URL:** https://github.com/near/nearcore/releases/tag/2.10.5
 
 **Release Notes:**
 
 ```
-CODE_COLOR: CODE_RED_MAINNET
-RELEASE_VERSION: 2.10.4
+CODE_COLOR: CODE_GREEN_MAINNET
+RELEASE_VERSION: 2.10.5
 PROTOCOL_UPGRADE: FALSE
 DATABASE_UPGRADE: FALSE
-SECURITY_UPGRADE: TRUE
+SECURITY_UPGRADE: FALSE
 ```
 
-This release fixes critical flaws in network code that could cause node crash.
-Upgrade as soon as possible to avoid node downtime.
+This release includes the following on top of 2.10.4:
+- State sync performance optimization: #14830
+- Indexer fix for double hashing of `code` as part of `DeployContract` and `DeployGlobalContract` actions: #14840
+- `GlobalContractIdentifierView` serialization fix: #14828
+
+Even with a `CODE_GREEN` status, validators are encouraged to update for bett
 
 ---
 

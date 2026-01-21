@@ -1,17 +1,17 @@
 {
   "AztecProtocol/aztec-packages": {
-    "tag_name": "v3.0.2",
-    "name": "v3.0.2",
-    "published_at": "2026-01-14T14:40:47Z",
-    "html_url": "https://github.com/AztecProtocol/aztec-packages/releases/tag/v3.0.2",
-    "body": "## [3.0.2](https://github.com/AztecProtocol/aztec-packages/compare/v3.0.1...v3.0.2) (2026-01-12)\n\n\n### Bug Fixes\n\n* node request from `PXE` crossing `MAX_RPC_LIMIT` ([#19516](https://github.com/AztecProtocol/aztec-packages/issues/19516)) ([4a29a70](https://github.com/AztecProtocol/aztec-packages/commit/4a29a70d171df337fba51ab62567c853f84fca68))"
+    "tag_name": "v3.0.3",
+    "name": "v3.0.3",
+    "published_at": "2026-01-20T19:46:10Z",
+    "html_url": "https://github.com/AztecProtocol/aztec-packages/releases/tag/v3.0.3",
+    "body": "## [3.0.3](https://github.com/AztecProtocol/aztec-packages/compare/v3.0.2...v3.0.3) (2026-01-15)\n\n\n### Miscellaneous\n\n* fix bot accumulating many recipients ([#19633](https://github.com/AztecProtocol/aztec-packages/issues/19633)) ([e40a73d](https://github.com/AztecProtocol/aztec-packages/commit/e40a73d8df02ed6ccd283966b62e57de4d032082))"
   },
   "near/nearcore": {
-    "tag_name": "2.10.4",
-    "name": "2.10.4",
-    "published_at": "2026-01-13T15:00:28Z",
-    "html_url": "https://github.com/near/nearcore/releases/tag/2.10.4",
-    "body": "```\r\nCODE_COLOR: CODE_RED_MAINNET\r\nRELEASE_VERSION: 2.10.4\r\nPROTOCOL_UPGRADE: FALSE\r\nDATABASE_UPGRADE: FALSE\r\nSECURITY_UPGRADE: TRUE\r\n```\r\n\r\nThis release fixes critical flaws in network code that could cause node crash.\r\nUpgrade as soon as possible to avoid node downtime."
+    "tag_name": "2.10.5",
+    "name": "2.10.5",
+    "published_at": "2026-01-20T18:43:08Z",
+    "html_url": "https://github.com/near/nearcore/releases/tag/2.10.5",
+    "body": "```\r\nCODE_COLOR: CODE_GREEN_MAINNET\r\nRELEASE_VERSION: 2.10.5\r\nPROTOCOL_UPGRADE: FALSE\r\nDATABASE_UPGRADE: FALSE\r\nSECURITY_UPGRADE: FALSE\r\n```\r\n\r\nThis release includes the following on top of 2.10.4:\r\n- State sync performance optimization: #14830\r\n- Indexer fix for double hashing of `code` as part of `DeployContract` and `DeployGlobalContract` actions: #14840\r\n- `GlobalContractIdentifierView` serialization fix: #14828\r\n\r\nEven with a `CODE_GREEN` status, validators are encouraged to update for better state sync performance. Furthermore, nodes running indexers should use this release to ensure deploy contract actions are processed correctly."
   },
   "NethermindEth/nethermind": {
     "tag_name": "1.36.0",
