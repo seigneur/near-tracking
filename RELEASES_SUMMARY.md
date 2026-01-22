@@ -1,23 +1,24 @@
 # Latest Releases
 
-*Last updated: 2026-01-21 00:02:25 UTC*
+*Last updated: 2026-01-22 00:02:06 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v3.0.3
+**Latest Version:** v2.1.10
 
-**Published:** 2026-01-20T19:46:10Z
+**Published:** 2026-01-21T12:23:56Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v3.0.3
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v2.1.10
 
 **Release Notes:**
 
-## [3.0.3](https://github.com/AztecProtocol/aztec-packages/compare/v3.0.2...v3.0.3) (2026-01-15)
+## [2.1.10](https://github.com/AztecProtocol/aztec-packages/compare/v2.1.9...v2.1.10) (2026-01-08)
 
 
 ### Miscellaneous
 
-* fix bot accumulating many recipients ([#19633](https://github.com/AztecProtocol/aztec-packages/issues/19633)) ([e40a73d](https://github.com/AztecProtocol/aztec-packages/commit/e40a73d8df02ed6ccd283966b62e57de4d032082))
+* Accumulated backports to v2 ([#18879](https://github.com/AztecProtocol/aztec-packages/issues/18879)) ([f4f6ed4](https://github.com/AztecProtocol/aztec-packages/commit/f4f6ed4e0c5de5a4241a2ccd8aa9a9d7c41c335d))
+* Accumulated backports to v2 ([#18938](https://github.com/AztecProtocol/aztec-packages/issues/18938)) ([6f35d70](https://github.com/AztecProtocol/aztec-packages/commit
 
 ---
 
