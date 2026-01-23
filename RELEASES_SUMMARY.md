@@ -1,24 +1,23 @@
 # Latest Releases
 
-*Last updated: 2026-01-22 00:02:06 UTC*
+*Last updated: 2026-01-23 00:02:50 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v2.1.10
+**Latest Version:** v2.1.11
 
-**Published:** 2026-01-21T12:23:56Z
+**Published:** 2026-01-22T09:05:46Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v2.1.10
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v2.1.11
 
 **Release Notes:**
 
-## [2.1.10](https://github.com/AztecProtocol/aztec-packages/compare/v2.1.9...v2.1.10) (2026-01-08)
+## [2.1.11](https://github.com/AztecProtocol/aztec-packages/compare/v2.1.10...v2.1.11) (2026-01-21)
 
 
 ### Miscellaneous
 
-* Accumulated backports to v2 ([#18879](https://github.com/AztecProtocol/aztec-packages/issues/18879)) ([f4f6ed4](https://github.com/AztecProtocol/aztec-packages/commit/f4f6ed4e0c5de5a4241a2ccd8aa9a9d7c41c335d))
-* Accumulated backports to v2 ([#18938](https://github.com/AztecProtocol/aztec-packages/issues/18938)) ([6f35d70](https://github.com/AztecProtocol/aztec-packages/commit
+* bump msgpack (backport) ([#19794](https://github.com/AztecProtocol/aztec-packages/issues/19794)) ([4d6b86f](https://github.com/AztecProtocol/aztec-packages/commit/4d6b86f9c3ff93e1224e91c5be1ebd0d439b3083))
 
 ---
 
