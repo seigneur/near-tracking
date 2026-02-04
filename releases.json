@@ -7,11 +7,11 @@
     "body": "## [2.1.11](https://github.com/AztecProtocol/aztec-packages/compare/v2.1.10...v2.1.11) (2026-01-21)\n\n\n### Miscellaneous\n\n* bump msgpack (backport) ([#19794](https://github.com/AztecProtocol/aztec-packages/issues/19794)) ([4d6b86f](https://github.com/AztecProtocol/aztec-packages/commit/4d6b86f9c3ff93e1224e91c5be1ebd0d439b3083))"
   },
   "near/nearcore": {
-    "tag_name": "2.10.5",
-    "name": "2.10.5",
-    "published_at": "2026-01-20T18:43:08Z",
-    "html_url": "https://github.com/near/nearcore/releases/tag/2.10.5",
-    "body": "```\r\nCODE_COLOR: CODE_GREEN_MAINNET\r\nRELEASE_VERSION: 2.10.5\r\nPROTOCOL_UPGRADE: FALSE\r\nDATABASE_UPGRADE: FALSE\r\nSECURITY_UPGRADE: FALSE\r\n```\r\n\r\nThis release includes the following on top of 2.10.4:\r\n- State sync performance optimization: #14830\r\n- Indexer fix for double hashing of `code` as part of `DeployContract` and `DeployGlobalContract` actions: #14840\r\n- `GlobalContractIdentifierView` serialization fix: #14828\r\n\r\nEven with a `CODE_GREEN` status, validators are encouraged to update for better state sync performance. Furthermore, nodes running indexers should use this release to ensure deploy contract actions are processed correctly."
+    "tag_name": "2.10.6",
+    "name": "2.10.6",
+    "published_at": "2026-02-03T14:58:37Z",
+    "html_url": "https://github.com/near/nearcore/releases/tag/2.10.6",
+    "body": "```\r\nCODE_COLOR: CODE_RED_MAINNET, CODE_RED_TESTNET\r\nRELEASE_VERSION: 2.10.6\r\nPROTOCOL_UPGRADE: FALSE\r\nDATABASE_UPGRADE: FALSE\r\nSECURITY_UPGRADE: TRUE\r\n```\r\n\r\nThis release fixes critical flaws in nearcore code that could cause node crash.\r\nUpgrade as soon as possible to avoid node downtime.\r\n"
   },
   "NethermindEth/nethermind": {
     "tag_name": "1.36.0",

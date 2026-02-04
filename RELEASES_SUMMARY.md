@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-01-23 00:02:50 UTC*
+*Last updated: 2026-02-04 00:03:14 UTC*
 
 ## Aztec CLI
 
@@ -23,28 +23,25 @@
 
 ## NEAR Protocol
 
-**Latest Version:** 2.10.5
+**Latest Version:** 2.10.6
 
-**Published:** 2026-01-20T18:43:08Z
+**Published:** 2026-02-03T14:58:37Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.10.5
+**URL:** https://github.com/near/nearcore/releases/tag/2.10.6
 
 **Release Notes:**
 
 ```
-CODE_COLOR: CODE_GREEN_MAINNET
-RELEASE_VERSION: 2.10.5
+CODE_COLOR: CODE_RED_MAINNET, CODE_RED_TESTNET
+RELEASE_VERSION: 2.10.6
 PROTOCOL_UPGRADE: FALSE
 DATABASE_UPGRADE: FALSE
-SECURITY_UPGRADE: FALSE
+SECURITY_UPGRADE: TRUE
 ```
 
-This release includes the following on top of 2.10.4:
-- State sync performance optimization: #14830
-- Indexer fix for double hashing of `code` as part of `DeployContract` and `DeployGlobalContract` actions: #14840
-- `GlobalContractIdentifierView` serialization fix: #14828
+This release fixes critical flaws in nearcore code that could cause node crash.
+Upgrade as soon as possible to avoid node downtime.
 
-Even with a `CODE_GREEN` status, validators are encouraged to update for bett
 
 ---
 
