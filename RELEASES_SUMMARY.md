@@ -1,23 +1,24 @@
 # Latest Releases
 
-*Last updated: 2026-02-04 00:03:14 UTC*
+*Last updated: 2026-02-28 00:02:31 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v2.1.11
+**Latest Version:** v4.0.4
 
-**Published:** 2026-01-22T09:05:46Z
+**Published:** 2026-02-27T17:29:37Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v2.1.11
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.0.4
 
 **Release Notes:**
 
-## [2.1.11](https://github.com/AztecProtocol/aztec-packages/compare/v2.1.10...v2.1.11) (2026-01-21)
-
-
-### Miscellaneous
-
-* bump msgpack (backport) ([#19794](https://github.com/AztecProtocol/aztec-packages/issues/19794)) ([4d6b86f](https://github.com/AztecProtocol/aztec-packages/commit/4d6b86f9c3ff93e1224e91c5be1ebd0d439b3083))
+## [4.0.1](https://github.com/AztecProtocol/aztec-packages/compare/v4.0.0...v4.0.1) (2026-02-26)
+### � BREAKING CHANGES
+* Bump l2 gas per note hash ([#20862](https://github.com/AztecProtocol/aztec-packages/issues/20862))
+* update vks
+* update da gas ([#20611](https://github.com/AztecProtocol/aztec-packages/issues/20611))
+* change max private log size to 16 fields ([#20515](https://github.com/AztecProtocol/aztec-packages/issues/20515))
+* pairing points audit ([#20456](https://github.com/AztecProt
 
 ---
 
