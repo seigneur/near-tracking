@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-02-28 00:02:31 UTC*
+*Last updated: 2026-03-05 00:04:08 UTC*
 
 ## Aztec CLI
 
@@ -24,17 +24,17 @@
 
 ## NEAR Protocol
 
-**Latest Version:** 2.10.6
+**Latest Version:** 2.10.7
 
-**Published:** 2026-02-03T14:58:37Z
+**Published:** 2026-03-04T14:56:42Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.10.6
+**URL:** https://github.com/near/nearcore/releases/tag/2.10.7
 
 **Release Notes:**
 
 ```
 CODE_COLOR: CODE_RED_MAINNET, CODE_RED_TESTNET
-RELEASE_VERSION: 2.10.6
+RELEASE_VERSION: 2.10.7
 PROTOCOL_UPGRADE: FALSE
 DATABASE_UPGRADE: FALSE
 SECURITY_UPGRADE: TRUE
