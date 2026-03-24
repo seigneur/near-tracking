@@ -1,24 +1,14 @@
 # Latest Releases
 
-*Last updated: 2026-03-07 00:03:42 UTC*
+*Last updated: 2026-03-24 00:04:12 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v4.0.4
+**Latest Version:** v4.1.0
 
-**Published:** 2026-02-27T17:29:37Z
+**Published:** 2026-03-23T14:58:11Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.0.4
-
-**Release Notes:**
-
-## [4.0.1](https://github.com/AztecProtocol/aztec-packages/compare/v4.0.0...v4.0.1) (2026-02-26)
-### � BREAKING CHANGES
-* Bump l2 gas per note hash ([#20862](https://github.com/AztecProtocol/aztec-packages/issues/20862))
-* update vks
-* update da gas ([#20611](https://github.com/AztecProtocol/aztec-packages/issues/20611))
-* change max private log size to 16 fields ([#20515](https://github.com/AztecProtocol/aztec-packages/issues/20515))
-* pairing points audit ([#20456](https://github.com/AztecProt
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.1.0
 
 ---
 
