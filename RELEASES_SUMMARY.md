@@ -1,14 +1,14 @@
 # Latest Releases
 
-*Last updated: 2026-03-24 00:04:12 UTC*
+*Last updated: 2026-03-25 00:05:12 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v4.1.0
+**Latest Version:** v4.1.1
 
-**Published:** 2026-03-23T14:58:11Z
+**Published:** 2026-03-24T23:19:15Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.1.0
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.1.1
 
 ---
 
