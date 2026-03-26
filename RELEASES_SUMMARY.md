@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-03-25 00:05:12 UTC*
+*Last updated: 2026-03-26 00:07:04 UTC*
 
 ## Aztec CLI
 
@@ -38,31 +38,38 @@ Upgrade as soon as possible to avoid node downtime.
 
 ## Nethermind
 
-**Latest Version:** 1.36.1
+**Latest Version:** 1.36.2
 
-**Published:** 2026-03-06T13:56:25Z
+**Published:** 2026-03-25T13:12:13Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.36.1
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.36.2
 
 **Release Notes:**
 
 # Release Notes
 
 > [!NOTE]
-> This release is only required for **Chiado testnet** (Gnosis Chain) node operators. All other networks are unaffected.
+> 
+> 
+> This release is only required for **Gnosis Chain** node operators. All other networks are unaffected.
+> 
 
 ## Overview
 
-This patch release enables the **Osaka hard fork on the Chiado testnet**, allowing operators and developers to test Osaka fork behavior on Chiado before Gnosis mainnet activation.
+This release enables the **Osaka hard fork on the Gnosis Chain.**
 
-### Fork Details
+### **Fork Details**
 
-- **Slot**: 21651456
-- **Timestamp**: 1773653580 (March 16, 2026 09:33:00 UTC)
+- Epoch: 1714688
+- **Timestamp**: 1776168380 Tue Apr 14 2026 12:06:20 UTC
 
 ## What's Changed
 
-- Enable Osaka on Chiado
+- Gnosis Osaka by @Marchhill in https://github.com/NethermindEth/nethermind/pull/10906
+
+### Full Changelog
+
+https://github.com/NethermindEth
 
 ---
 

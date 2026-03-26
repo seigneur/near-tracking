@@ -14,10 +14,10 @@
     "body": "```\r\nCODE_COLOR: CODE_RED_MAINNET, CODE_RED_TESTNET\r\nRELEASE_VERSION: 2.10.7\r\nPROTOCOL_UPGRADE: FALSE\r\nDATABASE_UPGRADE: FALSE\r\nSECURITY_UPGRADE: TRUE\r\n```\r\n\r\nThis release fixes critical flaws in nearcore code that could cause node crash.\r\nUpgrade as soon as possible to avoid node downtime.\r\n"
   },
   "NethermindEth/nethermind": {
-    "tag_name": "1.36.1",
-    "name": "v1.36.1",
-    "published_at": "2026-03-06T13:56:25Z",
-    "html_url": "https://github.com/NethermindEth/nethermind/releases/tag/1.36.1",
-    "body": "# Release Notes\r\n\r\n> [!NOTE]\r\n> This release is only required for **Chiado testnet** (Gnosis Chain) node operators. All other networks are unaffected.\r\n\r\n## Overview\r\n\r\nThis patch release enables the **Osaka hard fork on the Chiado testnet**, allowing operators and developers to test Osaka fork behavior on Chiado before Gnosis mainnet activation.\r\n\r\n### Fork Details\r\n\r\n- **Slot**: 21651456\r\n- **Timestamp**: 1773653580 (March 16, 2026 09:33:00 UTC)\r\n\r\n## What's Changed\r\n\r\n- Enable Osaka on Chiado by @Marchhill in https://github.com/NethermindEth/nethermind/pull/10727\r\n\r\n### Full Changelog\r\n\r\nhttps://github.com/NethermindEth/nethermind/compare/1.36.0...1.36.1"
+    "tag_name": "1.36.2",
+    "name": "v1.36.2",
+    "published_at": "2026-03-25T13:12:13Z",
+    "html_url": "https://github.com/NethermindEth/nethermind/releases/tag/1.36.2",
+    "body": "# Release Notes\r\n\r\n> [!NOTE]\r\n> \r\n> \r\n> This release is only required for **Gnosis Chain** node operators. All other networks are unaffected.\r\n> \r\n\r\n## Overview\r\n\r\nThis release enables the **Osaka hard fork on the Gnosis Chain.**\r\n\r\n### **Fork Details**\r\n\r\n- Epoch: 1714688\r\n- **Timestamp**: 1776168380 Tue Apr 14 2026 12:06:20 UTC\r\n\r\n## What's Changed\r\n\r\n- Gnosis Osaka by @Marchhill in https://github.com/NethermindEth/nethermind/pull/10906\r\n\r\n### Full Changelog\r\n\r\nhttps://github.com/NethermindEth/nethermind/compare/1.36.1...1.36.2\r\n\r\n#### Build signatures\r\n\r\nThe packages are signed with the following OpenPGP key: `AD12 7976 5093 C675 9CD8 A400 24A7 7461 6F1E 617E`"
   }
 }
