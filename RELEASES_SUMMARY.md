@@ -1,14 +1,21 @@
 # Latest Releases
 
-*Last updated: 2026-04-02 00:05:46 UTC*
+*Last updated: 2026-04-03 00:07:21 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v4.1.2
+**Latest Version:** v4.1.3
 
-**Published:** 2026-03-26T14:50:46Z
+**Published:** 2026-04-02T14:38:00Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.1.2
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.1.3
+
+**Release Notes:**
+
+## [4.1.3](https://github.com/AztecProtocol/aztec-packages/compare/v4.1.2...v4.1.3) (2026-04-02)                                
+                                                                                                                                  
+  **This is a mandatory upgrade.** It fixes a critical bug where an L1 reorg could cause the archiver to enter an infinite crash  
+  loop, requiring manual intervention to recover.                                                         
 
 ---
 

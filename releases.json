@@ -1,10 +1,10 @@
 {
   "AztecProtocol/aztec-packages": {
-    "tag_name": "v4.1.2",
-    "name": "v4.1.2",
-    "published_at": "2026-03-26T14:50:46Z",
-    "html_url": "https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.1.2",
-    "body": null
+    "tag_name": "v4.1.3",
+    "name": "v4.1.3",
+    "published_at": "2026-04-02T14:38:00Z",
+    "html_url": "https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.1.3",
+    "body": "## [4.1.3](https://github.com/AztecProtocol/aztec-packages/compare/v4.1.2...v4.1.3) (2026-04-02)                                \r\n                                                                                                                                  \r\n  **This is a mandatory upgrade.** It fixes a critical bug where an L1 reorg could cause the archiver to enter an infinite crash  \r\n  loop, requiring manual intervention to recover.                                                                                 \r\n                                                                                                                                  \r\n  ### Node        \r\n\r\n  **Bug Fixes**\r\n  * Fixed a crash loop where an L1 reorg moving a checkpoint to a different L1 block caused the archiver to re-discover it and\r\n  fail with `InitialCheckpointNumberNotSequentialError`. The archiver now gracefully handles duplicate checkpoints by accepting   \r\n  them if the archive root matches and updating the L1 metadata.\r\n  ([#22252](https://github.com/AztecProtocol/aztec-packages/issues/22252)) ([b5a9e97](https://github.com/AztecProtocol/aztec-packages/commit/b5a9e97c68)) ([7fee115](https://github.com/AztecProtocol/aztec-packages/commit/7fee115f64))\r\n\r\n  ### Other\r\n\r\n  **Bug Fixes**\r\n  * Expanded compatibility test coverage to run on all v4-related branches (`v4-next`, `backport-to-v4-staging`,\r\n  `backport-to-v4-next`), preventing compatibility breaks from going undetected \u2014 a gap that previously allowed a block header    \r\n  shape change to brick staging nodes. ([#22149](https://github.com/AztecProtocol/aztec-packages/issues/22149)) ([d8fa4c4](https://github.com/AztecProtocol/aztec-packages/commit/d8fa4c475d))      "
   },
   "near/nearcore": {
     "tag_name": "2.11.0",
