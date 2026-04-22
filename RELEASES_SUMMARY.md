@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-04-16 00:12:30 UTC*
+*Last updated: 2026-04-22 00:08:56 UTC*
 
 ## Aztec CLI
 
@@ -10,29 +10,46 @@
 
 **URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.2.0
 
+**Release Notes:**
+
+# Framework (Aztec.nr, Aztec.js, etc) Release Notes: v4.1.3 → v4.2.0
+
+**Date:** 2026-04-14
+**Range:** `v4.1.3..v4.2.0` (2026-04-02 → 2026-04-14)
+**Commits:** 135 framework-relevant commits
+
+Full migration instructions for every breaking change below live in [`docs/docs-developers/docs/resources/migration_notes.md`](docs/docs-developers/docs/resources/migration_notes.md).
+
+---
+
+## Breaking Changes
+
+### Aztec.nr
+
+- **[Aztec.nr]** Capsule operations are now scoped by `AztecAddress`. `
+
 ---
 
 ## NEAR Protocol
 
-**Latest Version:** 2.11.0
+**Latest Version:** 2.11.1
 
-**Published:** 2026-04-01T12:56:46Z
+**Published:** 2026-04-21T12:59:33Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.11.0
+**URL:** https://github.com/near/nearcore/releases/tag/2.11.1
 
 **Release Notes:**
 
 ```
-CODE_COLOR: CODE_YELLOW_MAINNET
-RELEASE_VERSION: 2.11.0
-PROTOCOL_UPGRADE: TRUE
-DATABASE_UPGRADE: TRUE
-SECURITY_UPGRADE: FALSE
+CODE_COLOR: CODE_RED_MAINNET, CODE_RED_TESTNET
+RELEASE_VERSION: 2.11.1
+PROTOCOL_UPGRADE: FALSE
+DATABASE_UPGRADE: FALSE
+SECURITY_UPGRADE: TRUE
 ```
 
-# Protocol Changes
-* Contract gas limit is increased from 300 TGas to 1 PGas.
-* Yield/Resume improvements - from now on, calling `promise_yield_resume` after `promise_yield_create` will always work. Previously there were some cases where calling `resume` would fail if called too quickly after `create`. See the [github issue](https://github.com/near/near
+This release fixes critical flaws in nearcore code that could cause node crash.
+Upgrade as soon as possible to avoid node downtime.
 
 ---
 
