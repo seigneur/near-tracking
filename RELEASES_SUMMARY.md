@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-04-22 00:08:56 UTC*
+*Last updated: 2026-04-29 00:15:42 UTC*
 
 ## Aztec CLI
 
@@ -55,38 +55,27 @@ Upgrade as soon as possible to avoid node downtime.
 
 ## Nethermind
 
-**Latest Version:** 1.36.2
+**Latest Version:** 1.37.1
 
-**Published:** 2026-03-25T13:12:13Z
+**Published:** 2026-04-28T23:31:32Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.36.2
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.37.1
 
 **Release Notes:**
 
-# Release Notes
-
-> [!NOTE]
-> 
-> 
-> This release is only required for **Gnosis Chain** node operators. All other networks are unaffected.
-> 
+# Release notes
 
 ## Overview
 
-This release enables the **Osaka hard fork on the Gnosis Chain.**
+> This release replaces 1.37.0
 
-### **Fork Details**
+540 Changes across 2,651 Files. Major worldstate backend refactor, RocksDB snapshots, flat storage for snap sync, block-level access lists (EIP-7928), initial zkEVM groundwork, and a large round of JSON-RPC and EVM hot-path optimizations.
 
-- Epoch: 1714688
-- **Timestamp**: 1776168380 Tue Apr 14 2026 12:06:20 UTC
+## Breaking changes
 
-## What's Changed
-
-- Gnosis Osaka by @Marchhill in https://github.com/NethermindEth/nethermind/pull/10906
-
-### Full Changelog
-
-https://github.com/NethermindEth
+- **eth/66 and eth/67 dropped**; `eth/69` is now default and `eth/70` added and activated (#9938, #10246)
+- **Engine API versioning reworked** (#10786)
+- **Vault and
 
 ---
 
