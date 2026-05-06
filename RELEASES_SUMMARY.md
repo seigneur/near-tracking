@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-04-29 00:15:42 UTC*
+*Last updated: 2026-05-06 00:15:09 UTC*
 
 ## Aztec CLI
 
@@ -55,27 +55,31 @@ Upgrade as soon as possible to avoid node downtime.
 
 ## Nethermind
 
-**Latest Version:** 1.37.1
+**Latest Version:** 1.37.2
 
-**Published:** 2026-04-28T23:31:32Z
+**Published:** 2026-05-05T13:48:59Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.37.1
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.37.2
 
 **Release Notes:**
 
 # Release notes
 
+# Release notes
+
 ## Overview
 
-> This release replaces 1.37.0
+This release fixes healthcheck and Archive Invalid Block issues on 1.37.1
 
-540 Changes across 2,651 Files. Major worldstate backend refactor, RocksDB snapshots, flat storage for snap sync, block-level access lists (EIP-7928), initial zkEVM groundwork, and a large round of JSON-RPC and EVM hot-path optimizations.
+## What's Changed
+* healthcheck fix by @svlachakis in https://github.com/NethermindEth/nethermind/pull/11482
+* Disable ParallelWorldState by @LukaszRozmej  https://github.com/NethermindEth/nethermind/commit/cd1c5ec650c3d686fbb5890e4ca04fb0cec44a79
 
-## Breaking changes
+**Full Changelog**: https://github.com/NethermindEth/nethermind/compare/1.37.1...1.37.2
 
-- **eth/66 and eth/67 dropped**; `eth/69` is now default and `eth/70` added and activated (#9938, #10246)
-- **Engine API versioning reworked** (#10786)
-- **Vault and
+#### Build signatures
+
+T
 
 ---
 
