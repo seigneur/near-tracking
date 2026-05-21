@@ -1,24 +1,29 @@
 # Latest Releases
 
-*Last updated: 2026-05-08 00:15:31 UTC*
+*Last updated: 2026-05-21 00:21:20 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v4.2.1
+**Latest Version:** v4.3.0
 
-**Published:** 2026-05-07T08:33:35Z
+**Published:** 2026-05-20T09:00:32Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.2.1
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.3.0
 
 **Release Notes:**
 
-Release 4.2.1 is a **MANDATORY** single-fix patch on top of 4.2.0. 
+# Release Notes: v4.3.0
 
-The on-chain check for "has this payload already been proposed?" was timing out at the RPC layer so signaling was suppressed across the validator set. This hotfix release restores governance signaling. 
+```
+                  .   ★   .                                       .   ★   .
 
-## Bug Fixes
-
-- **Sequencers could not signal governance payloads on long-lived rollups** ([#23001](https://github.com/AztecProtocol/aztec-packages/pull/23001)): The "has this payload already been proposed?" check used `e
+                                                          ♛
+                                                          │
+                                                          │
+                                                          │
+                                                          │
+                                                          │
+                                  
 
 ---
 
