@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-06-03 00:30:37 UTC*
+*Last updated: 2026-06-04 00:31:10 UTC*
 
 ## Aztec CLI
 
@@ -14,24 +14,28 @@
 
 ## NEAR Protocol
 
-**Latest Version:** 2.11.1
+**Latest Version:** 2.12.0
 
-**Published:** 2026-04-21T12:59:33Z
+**Published:** 2026-06-03T12:57:44Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.11.1
+**URL:** https://github.com/near/nearcore/releases/tag/2.12.0
 
 **Release Notes:**
 
 ```
-CODE_COLOR: CODE_RED_MAINNET, CODE_RED_TESTNET
-RELEASE_VERSION: 2.11.1
-PROTOCOL_UPGRADE: FALSE
-DATABASE_UPGRADE: FALSE
-SECURITY_UPGRADE: TRUE
+CODE_COLOR: CODE_YELLOW_MAINNET
+RELEASE_VERSION: 2.12.0
+PROTOCOL_UPGRADE: TRUE
+DATABASE_UPGRADE: TRUE
+SECURITY_UPGRADE: FALSE
 ```
 
-This release fixes critical flaws in nearcore code that could cause node crash.
-Upgrade as soon as possible to avoid node downtime.
+# Protocol Changes
+* The contract runtime has been upgraded to use the new Wasmtime-based runtime.
+* The contract runtime now allows for bulk memory instructions in Wasm code.
+
+# Non-protocol Changes
+* Fix VM compilation and cache metrics (`near_vm_runner_compilation_seconds`, `near_vm_compiled_contract_cache_*`) not being reported for contract deplo
 
 ---
 
