@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-06-05 00:23:00 UTC*
+*Last updated: 2026-06-16 00:31:07 UTC*
 
 ## Aztec CLI
 
@@ -53,24 +53,29 @@ SECURITY_UPGRADE: FALSE
 
 ## Nethermind
 
-**Latest Version:** 1.38.0
+**Latest Version:** 1.38.1
 
-**Published:** 2026-06-02T15:47:15Z
+**Published:** 2026-06-15T15:47:39Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.38.0
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.38.1
 
 **Release Notes:**
 
 # Release notes
 
-This release improves node robustness, restart safety, RPC compatibility, and runtime performance, especially for Flat DB users, RPC-heavy workloads, and chains relying on upcoming hardfork or EIP support.
+This is a patch release focused on Optimism / OP Stack support. It adds the OP **Karst** fork, refreshes the Superchain registry chains, and removes the bundled **Base** mainnet and sepolia configurations.
+
+Sepolia: Wed, Jun 17, 2026 at 16:00:01 UTC
+Mainnet: Wed, Jul 8, 2026 at 16:00:01 UTC 
 
 ## Overview
 
-> Full diff: [https://github.com/NethermindEth/nethermind/compare/1.37.2…release/1.38.0](https://github.com/NethermindEth/nethermind/compare/1.37.2%E2%80%A6release/1.38.0)
+> Full diff: https://github.com/NethermindEth/nethermind/compare/1.38.0...1.38.1
 > 
 
-372 changes since 1.37.2. Highlights include the Taiko Unzen hardfork, paralle
+5 changes since 1.38.0, all OP Stack–related. Highlights:
+
+- **OP Karst fork*
 
 ---
 
