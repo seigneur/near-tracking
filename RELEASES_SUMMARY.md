@@ -1,26 +1,37 @@
 # Latest Releases
 
-*Last updated: 2026-06-16 00:31:07 UTC*
+*Last updated: 2026-06-28 00:20:02 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v4.3.1
+**Latest Version:** v4.4.0
 
-**Published:** 2026-06-04T10:12:30Z
+**Published:** 2026-06-27T07:57:53Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.3.1
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.4.0
 
 **Release Notes:**
 
-Date: 2026-06-04
-Tag: v4.3.1
-Base: v4.3.0
-Range: v4.3.0..v4.3.1 — three bug fixes
+Date: 2026-06-27
+Tag: v4.4.0
+Base: v4.3.1
+Range: v4.3.1..v4.4.0
 
 ---
+
 ## Summary
 
-`v4.3.1` is a recommended patch on top of `v4.3.0`. It ships three bug fixes: a partial-epoch-proof failure mode in the prover-node when the prior epoch is still pending, a block-stream tips-store bug where finalized drifting ahead of proven could orphan still-live block data, and a release-tooling fix that re-stamps the actual aztec_version into published noir-contracts artifacts (`v4.3.0`
+`v4.4.0` is a **strongly recommended** upgrade on top of `v4.3.1`. It contains important security fixes that harden the node against crash and sync-stall vectors, plus a new **auto-shutdown** feature designed to support zero-downtime rollup upgrades.
+
+**All node operators should upgrade as soon as possible.**
+
+No migration steps required.
+
+---
+
+### ⚠ Breaking Changes
+
+- `ENABLE_VERSION_CHECK` (CLI: `--enable-versio
 
 ---
 
