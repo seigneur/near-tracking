@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-06-28 00:20:02 UTC*
+*Last updated: 2026-07-09 00:21:23 UTC*
 
 ## Aztec CLI
 
@@ -64,29 +64,19 @@ SECURITY_UPGRADE: FALSE
 
 ## Nethermind
 
-**Latest Version:** 1.38.1
+**Latest Version:** 1.39.0
 
-**Published:** 2026-06-15T15:47:39Z
+**Published:** 2026-07-08T17:56:34Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.38.1
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.39.0
 
 **Release Notes:**
 
 # Release notes
 
-This is a patch release focused on Optimism / OP Stack support. It adds the OP **Karst** fork, refreshes the Superchain registry chains, and removes the bundled **Base** mainnet and sepolia configurations.
+This release focuses on node robustness, Flat DB durability — alongside the eth/71 wire protocol, a reworked discovery stack, a large JSON-RPC features-and-correctness batch, continued Block-level Access Lists (EIP-7928) maturation, and a broad round of EVM, precompile, and state performance work.
 
-Sepolia: Wed, Jun 17, 2026 at 16:00:01 UTC
-Mainnet: Wed, Jul 8, 2026 at 16:00:01 UTC 
-
-## Overview
-
-> Full diff: https://github.com/NethermindEth/nethermind/compare/1.38.0...1.38.1
-> 
-
-5 changes since 1.38.0, all OP Stack–related. Highlights:
-
-- **OP Karst fork*
+> **OP Karst reminder:** the OP **Karst** hardfork (shipped in 1.38.1 and included here) activates on OP **Mainnet: Wed, Jul 8, 2026 at 16:00:01 UTC**. OP Stack operators must be 
 
 ---
 
