@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-07-09 00:21:23 UTC*
+*Last updated: 2026-07-10 00:20:57 UTC*
 
 ## Aztec CLI
 
@@ -37,28 +37,31 @@ No migration steps required.
 
 ## NEAR Protocol
 
-**Latest Version:** 2.12.0
+**Latest Version:** 2.13.0
 
-**Published:** 2026-06-03T12:57:44Z
+**Published:** 2026-07-09T13:07:41Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.12.0
+**URL:** https://github.com/near/nearcore/releases/tag/2.13.0
 
 **Release Notes:**
 
 ```
 CODE_COLOR: CODE_YELLOW_MAINNET
-RELEASE_VERSION: 2.12.0
+RELEASE_VERSION: 2.13.0
 PROTOCOL_UPGRADE: TRUE
 DATABASE_UPGRADE: TRUE
 SECURITY_UPGRADE: FALSE
 ```
 
-# Protocol Changes
-* The contract runtime has been upgraded to use the new Wasmtime-based runtime.
-* The contract runtime now allows for bulk memory instructions in Wasm code.
-
-# Non-protocol Changes
-* Fix VM compilation and cache metrics (`near_vm_runner_compilation_seconds`, `near_vm_compiled_contract_cache_*`) not being reported for contract deplo
+# [NOTE] Check your `state_sync.sync` setting in config.json
+2.13 no longer accepts the old centralized (external-storage) state sync. If your `config.json` has `state_sync.sync` set to `ExternalStorage`, like the following:
+```
+{
+  "state_sync": {
+    "sync": {
+      "ExternalStorage": {
+        "location": { "GCS": { "bucket": "..." } },
+       
 
 ---
 
