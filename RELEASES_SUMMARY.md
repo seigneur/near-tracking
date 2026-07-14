@@ -1,37 +1,36 @@
 # Latest Releases
 
-*Last updated: 2026-07-10 00:20:57 UTC*
+*Last updated: 2026-07-14 00:14:47 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v4.4.0
+**Latest Version:** v5.0.0
 
-**Published:** 2026-06-27T07:57:53Z
+**Published:** 2026-07-13T12:33:01Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v4.4.0
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v5.0.0
 
 **Release Notes:**
 
-Date: 2026-06-27
-Tag: v4.4.0
-Base: v4.3.1
-Range: v4.3.1..v4.4.0
+```
+  ██    ██  ██████
+  ██    ██  ██
+   ██  ██   ██████
+    ████        ██
+     ██     ██████
 
----
+        A Z T E C
+```
+
+*v 5 · 0 · 0 — none of the wait, twice the pace, half the gates.*
+
+**Date:** 2026-07-11 · **Tag:** `v5.0.0` · **Baseline:** `v4.4.0` · **First stable v5 — supported on testnet AND mainnet**
+
+Install: `aztec-up install 5.0.0` · Docker: `aztecprotocol/aztec:5.0.0`
 
 ## Summary
 
-`v4.4.0` is a **strongly recommended** upgrade on top of `v4.3.1`. It contains important security fixes that harden the node against crash and sync-stall vectors, plus a new **auto-shutdown** feature designed to support zero-downtime rollup upgrades.
-
-**All node operators should upgrade as soon as possible.**
-
-No migration steps required.
-
----
-
-### ⚠ Breaking Changes
-
-- `ENABLE_VERSION_CHECK` (CLI: `--enable-versio
+v5.0.0 is the first stable release of the v5 line and the first Aztec release supported on both testnet a
 
 ---
 
