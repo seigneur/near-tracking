@@ -1,66 +1,61 @@
 # Latest Releases
 
-*Last updated: 2026-07-14 00:14:47 UTC*
+*Last updated: 2026-07-16 00:16:14 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v5.0.0
+**Latest Version:** v5.0.1
 
-**Published:** 2026-07-13T12:33:01Z
+**Published:** 2026-07-15T20:00:20Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v5.0.0
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v5.0.1
 
 **Release Notes:**
 
 ```
-  ██    ██  ██████
-  ██    ██  ██
-   ██  ██   ██████
-    ████        ██
-     ██     ██████
+  █████   █████     █
+  █       █   █    ██
+  █████   █   █     █
+      █   █   █     █
+  █████   █████   █████
 
         A Z T E C
 ```
 
-*v 5 · 0 · 0 — none of the wait, twice the pace, half the gates.*
+**Date:** 2026-07-15 · **Tag:** `v5.0.1` · **Baseline:** `v5.0.0` · **Patch release — required for aztec.nr / aztec.js / PXE, optional for node operators**
 
-**Date:** 2026-07-11 · **Tag:** `v5.0.0` · **Baseline:** `v4.4.0` · **First stable v5 — supported on testnet AND mainnet**
-
-Install: `aztec-up install 5.0.0` · Docker: `aztecprotocol/aztec:5.0.0`
+Install: `aztec-up install 5.0.1` · Docker: `aztecprotocol/aztec:5.0.1`
 
 ## Summary
 
-v5.0.0 is the first stable release of the v5 line and the first Aztec release supported on both testnet a
+v5.0.1 is a patch release focused on the client. It closes a set of note-discovery and message-handlin
 
 ---
 
 ## NEAR Protocol
 
-**Latest Version:** 2.13.0
+**Latest Version:** 2.13.1
 
-**Published:** 2026-07-09T13:07:41Z
+**Published:** 2026-07-15T13:04:02Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.13.0
+**URL:** https://github.com/near/nearcore/releases/tag/2.13.1
 
 **Release Notes:**
 
 ```
 CODE_COLOR: CODE_YELLOW_MAINNET
-RELEASE_VERSION: 2.13.0
+RELEASE_VERSION: 2.13.1
 PROTOCOL_UPGRADE: TRUE
-DATABASE_UPGRADE: TRUE
+DATABASE_UPGRADE: FALSE
 SECURITY_UPGRADE: FALSE
 ```
 
-# [NOTE] Check your `state_sync.sync` setting in config.json
-2.13 no longer accepts the old centralized (external-storage) state sync. If your `config.json` has `state_sync.sync` set to `ExternalStorage`, like the following:
-```
-{
-  "state_sync": {
-    "sync": {
-      "ExternalStorage": {
-        "location": { "GCS": { "bucket": "..." } },
-       
+This release includes a fix for the code that is a part of the protocol version 85.
+
+Protocol upgrade voting time stays the same as [2.13.0](https://github.com/near/nearcore/releases/tag/2.13.0).
+
+Voting for protocol version 86 will start on **Monday July 20th 00:00 UTC**.
+**To continue participating in consensus, you need to upgrade your node befor
 
 ---
 
