@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-07-16 00:16:14 UTC*
+*Last updated: 2026-07-17 00:17:33 UTC*
 
 ## Aztec CLI
 
@@ -61,19 +61,27 @@ Voting for protocol version 86 will start on **Monday July 20th 00:00 UTC**.
 
 ## Nethermind
 
-**Latest Version:** 1.39.0
+**Latest Version:** 1.39.1
 
-**Published:** 2026-07-08T17:56:34Z
+**Published:** 2026-07-16T13:03:44Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.39.0
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.39.1
 
 **Release Notes:**
 
 # Release notes
 
-This release focuses on node robustness, Flat DB durability — alongside the eth/71 wire protocol, a reworked discovery stack, a large JSON-RPC features-and-correctness batch, continued Block-level Access Lists (EIP-7928) maturation, and a broad round of EVM, precompile, and state performance work.
+This is a patch release on top of 1.39.0 with a round of bug fixes and reliability improvements across snap sync, networking, JSON-RPC, and the experimental Flat DB.
 
-> **OP Karst reminder:** the OP **Karst** hardfork (shipped in 1.38.1 and included here) activates on OP **Mainnet: Wed, Jul 8, 2026 at 16:00:01 UTC**. OP Stack operators must be 
+## Overview
+
+> Full diff: https://github.com/NethermindEth/nethermind/compare/1.39.0...1.39.1
+> 
+
+8 changes since 1.39.0. Highlights:
+
+- **Flat DB (experimental, opt-in)** — fixed a disposal race between shutdown and in-flight trie-warmer jobs (#12237)
+- **`eth_simulateV1`** now bounds the total block e
 
 ---
 
