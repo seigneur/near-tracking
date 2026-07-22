@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-07-17 00:17:33 UTC*
+*Last updated: 2026-07-22 00:15:26 UTC*
 
 ## Aztec CLI
 
@@ -61,27 +61,28 @@ Voting for protocol version 86 will start on **Monday July 20th 00:00 UTC**.
 
 ## Nethermind
 
-**Latest Version:** 1.39.1
+**Latest Version:** 1.39.2
 
-**Published:** 2026-07-16T13:03:44Z
+**Published:** 2026-07-21T16:33:39Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.39.1
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.39.2
 
 **Release Notes:**
 
+> [!IMPORTANT]
+> Given the number of CVEs from Microsoft this release fixes it is **mandatory for all** node operators.
+> 
+
 # Release notes
 
-This is a patch release on top of 1.39.0 with a round of bug fixes and reliability improvements across snap sync, networking, JSON-RPC, and the experimental Flat DB.
+This is a patch release on top of 1.39.1 that updates the .NET dependencies to Microsoft's July 2026 servicing release (10.0.10), which 17 CVE security fixes, and makes the `eth_getLogs` block-range limit explicit and configurable.
+
 
 ## Overview
 
-> Full diff: https://github.com/NethermindEth/nethermind/compare/1.39.0...1.39.1
-> 
+4 changes since 1.39.1:
 
-8 changes since 1.39.0. Highlights:
-
-- **Flat DB (experimental, opt-in)** — fixed a disposal race between shutdown and in-flight trie-warmer jobs (#12237)
-- **`eth_simulateV1`** now bounds the total block e
+- **.NET packages updated to 10.0.10** — Microsoft's [July 2026 servicing 
 
 ---
 
