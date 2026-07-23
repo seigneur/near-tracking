@@ -1,34 +1,28 @@
 # Latest Releases
 
-*Last updated: 2026-07-22 00:15:26 UTC*
+*Last updated: 2026-07-23 00:17:35 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v5.0.1
+**Latest Version:** v5.1.0
 
-**Published:** 2026-07-15T20:00:20Z
+**Published:** 2026-07-22T11:05:00Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v5.0.1
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v5.1.0
 
 **Release Notes:**
 
 ```
-  █████   █████     █
-  █       █   █    ██
-  █████   █   █     █
-      █   █   █     █
-  █████   █████   █████
-
-        A Z T E C
+$ aztec verify --release v5.1.0
+──────────────────────────────────────────────────────────────────────────────
+  proof     π ........................................................... ok
+  vk root   0x2b3b6ea4412b9c8f6457a37f91a2870306f8641e07e16a49b68bda6f8bc02892  ✓
+  ↳ matches canonical rollup 0x91fF8bbD8Ebb07893010D50A48A1609e5EBd8E34 on mainnet
+──────────────────────────────────────────────────────────────────────────────
+  A Z T E C  ·  v5.1.0  ·  verified ✓
 ```
 
-**Date:** 2026-07-15 · **Tag:** `v5.0.1` · **Baseline:** `v5.0.0` · **Patch release — required for aztec.nr / aztec.js / PXE, optional for node operators**
-
-Install: `aztec-up install 5.0.1` · Docker: `aztecprotocol/aztec:5.0.1`
-
-## Summary
-
-v5.0.1 is a patch release focused on the client. It closes a set of note-discovery and message-handlin
+**Date:** 2
 
 ---
 
