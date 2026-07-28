@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-07-23 00:17:35 UTC*
+*Last updated: 2026-07-28 00:16:31 UTC*
 
 ## Aztec CLI
 
@@ -28,28 +28,24 @@ $ aztec verify --release v5.1.0
 
 ## NEAR Protocol
 
-**Latest Version:** 2.13.1
+**Latest Version:** 2.13.2
 
-**Published:** 2026-07-15T13:04:02Z
+**Published:** 2026-07-27T14:02:04Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.13.1
+**URL:** https://github.com/near/nearcore/releases/tag/2.13.2
 
 **Release Notes:**
 
 ```
-CODE_COLOR: CODE_YELLOW_MAINNET
-RELEASE_VERSION: 2.13.1
-PROTOCOL_UPGRADE: TRUE
+CODE_COLOR: CODE_RED_MAINNET, CODE_RED_TESTNET
+RELEASE_VERSION: 2.13.2
+PROTOCOL_UPGRADE: FALSE
 DATABASE_UPGRADE: FALSE
-SECURITY_UPGRADE: FALSE
+SECURITY_UPGRADE: TRUE
 ```
 
-This release includes a fix for the code that is a part of the protocol version 85.
-
-Protocol upgrade voting time stays the same as [2.13.0](https://github.com/near/nearcore/releases/tag/2.13.0).
-
-Voting for protocol version 86 will start on **Monday July 20th 00:00 UTC**.
-**To continue participating in consensus, you need to upgrade your node befor
+This release fixes critical flaws in nearcore code that could cause node crash.
+Upgrade as soon as possible to avoid node downtime.
 
 ---
 
