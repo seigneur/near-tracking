@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-08-05 00:18:13 UTC*
+*Last updated: 2026-08-07 01:05:01 UTC*
 
 ## Aztec CLI
 
@@ -50,28 +50,27 @@ This release includes Debug UI fixes (#16155, #16156, #16157) and network limit 
 
 ## Nethermind
 
-**Latest Version:** 1.39.2
+**Latest Version:** 1.39.3
 
-**Published:** 2026-07-21T16:33:39Z
+**Published:** 2026-08-06T13:46:24Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.39.2
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.39.3
 
 **Release Notes:**
 
 > [!IMPORTANT]
-> Given the number of CVEs from Microsoft this release fixes it is **mandatory for all** node operators.
-> 
+> This is a mandatory update for all node operators. Please upgrade at your earliest convenience.
 
 # Release notes
 
-This is a patch release on top of 1.39.1 that updates the .NET dependencies to Microsoft's July 2026 servicing release (10.0.10), which 17 CVE security fixes, and makes the `eth_getLogs` block-range limit explicit and configurable.
-
+A patch release on top of 1.39.2 with reliability and hardening fixes across block processing, networking, and request decoding. No consensus or database-format changes, so it's a drop-in upgrade from any 1.39.x version.
 
 ## Overview
 
-4 changes since 1.39.1:
+3 changes since 1.39.2:
 
-- **.NET packages updated to 10.0.10** — Microsoft's [July 2026 servicing 
+- Hardened ABI decoding against malformed input (#12588)
+- Fixed pooled-memory cleanup in block p
 
 ---
 
