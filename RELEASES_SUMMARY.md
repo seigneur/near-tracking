@@ -1,28 +1,30 @@
 # Latest Releases
 
-*Last updated: 2026-08-07 01:05:01 UTC*
+*Last updated: 2026-08-18 00:02:44 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v5.1.0
+**Latest Version:** v5.2.0
 
-**Published:** 2026-07-22T11:05:00Z
+**Published:** 2026-08-17T08:53:53Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v5.1.0
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v5.2.0
 
 **Release Notes:**
 
 ```
-$ aztec verify --release v5.1.0
-──────────────────────────────────────────────────────────────────────────────
-  proof     π ........................................................... ok
-  vk root   0x2b3b6ea4412b9c8f6457a37f91a2870306f8641e07e16a49b68bda6f8bc02892  ✓
-  ↳ matches canonical rollup 0x91fF8bbD8Ebb07893010D50A48A1609e5EBd8E34 on mainnet
-──────────────────────────────────────────────────────────────────────────────
-  A Z T E C  ·  v5.1.0  ·  verified ✓
+  ▁▂▃▅▇█▇▅▃▂▁▁▂▃▅▇█▇▅▃▂▁▁▂▃▅▇█▇▅▃▂▁▁▂▃▅▇█▇▅▃▂▁▁▂▃▅▇█▇▅▃▂▁
+
+                   A Z T E C  ·  5 · 2 · 0
 ```
 
-**Date:** 2
+**Date:** 2026-08-17 · **Tag:** `v5.2.0` · **Baseline:** `v5.1.0` · Minor release
+
+Install: `aztec-up install 5.2.0` · Docker: `aztecprotocol/aztec:5.2.0`
+
+## Summary
+
+A maintenance release focused on running nodes: prover nodes use much less memory, epoch proving recovers from faults instead of giving up, p2p and mempool handling is hardened, and several L1 interactions stop wasting ga
 
 ---
 
