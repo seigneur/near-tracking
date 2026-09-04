@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-08-18 00:02:44 UTC*
+*Last updated: 2026-09-04 00:02:09 UTC*
 
 ## Aztec CLI
 
@@ -30,23 +30,23 @@ A maintenance release focused on running nodes: prover nodes use much less memor
 
 ## NEAR Protocol
 
-**Latest Version:** 2.13.3
+**Latest Version:** 2.13.4
 
-**Published:** 2026-08-04T15:14:49Z
+**Published:** 2026-09-03T15:03:23Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.13.3
+**URL:** https://github.com/near/nearcore/releases/tag/2.13.4
 
 **Release Notes:**
 
 ```
-CODE_COLOR: CODE_GREEN_MAINNET, CODE_GREEN_TESTNET
-RELEASE_VERSION: 2.13.3
+CODE_COLOR: CODE_RED_MAINNET, CODE_RED_TESTNET
+RELEASE_VERSION: 2.13.4
 PROTOCOL_UPGRADE: FALSE
 DATABASE_UPGRADE: FALSE
-SECURITY_UPGRADE: FALSE
+SECURITY_UPGRADE: TRUE
 ```
-
-This release includes Debug UI fixes (#16155, #16156, #16157) and network limit adjustments (#16145) on top of 2.13.2.
+This release fixes critical flaws in nearcore that could cause node crash/DoS.
+Upgrade as soon as possible to avoid node downtime.
 
 ---
 
