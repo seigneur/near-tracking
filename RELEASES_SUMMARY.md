@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-09-04 00:02:09 UTC*
+*Last updated: 2026-09-23 00:01:59 UTC*
 
 ## Aztec CLI
 
@@ -52,27 +52,21 @@ Upgrade as soon as possible to avoid node downtime.
 
 ## Nethermind
 
-**Latest Version:** 1.39.3
+**Latest Version:** 2.0.0
 
-**Published:** 2026-08-06T13:46:24Z
+**Published:** 2026-09-22T14:58:58Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/1.39.3
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/2.0.0
 
 **Release Notes:**
 
-> [!IMPORTANT]
-> This is a mandatory update for all node operators. Please upgrade at your earliest convenience.
-
 # Release notes
 
-A patch release on top of 1.39.2 with reliability and hardening fixes across block processing, networking, and request decoding. No consensus or database-format changes, so it's a drop-in upgrade from any 1.39.x version.
+669 merged pull requests since 1.39.3, from 39 contributors.
 
-## Overview
+Nethermind 2.0.0 is a hardened, faster, archive-capable execution client, built for Ethereum, its L2s, and beyond. It consolidates everything shipped in `2.0.0-rc` and `2.0.0-rc2`.
 
-3 changes since 1.39.2:
-
-- Hardened ABI decoding against malformed input (#12588)
-- Fixed pooled-memory cleanup in block p
+Most nodes upgrade in place with no resync. There are **breaking changes** — read that section before upgrading, especially if you run an **archive node**, set custom **config keys**, or build against Nethermind as a **library or plu
 
 ---
 
