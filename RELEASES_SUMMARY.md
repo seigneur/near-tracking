@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-09-23 00:01:59 UTC*
+*Last updated: 2026-10-02 00:02:15 UTC*
 
 ## Aztec CLI
 
@@ -52,21 +52,25 @@ Upgrade as soon as possible to avoid node downtime.
 
 ## Nethermind
 
-**Latest Version:** 2.0.0
+**Latest Version:** 2.1.0
 
-**Published:** 2026-09-22T14:58:58Z
+**Published:** 2026-10-01T22:43:39Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/2.0.0
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/2.1.0
 
 **Release Notes:**
 
 # Release notes
 
-669 merged pull requests since 1.39.3, from 39 contributors.
+359 merged pull requests since 2.0.0, from 29 contributors.
 
-Nethermind 2.0.0 is a hardened, faster, archive-capable execution client, built for Ethereum, its L2s, and beyond. It consolidates everything shipped in `2.0.0-rc` and `2.0.0-rc2`.
+> **Upgrade every Sepolia node to 2.1.0 before the Glamsterdam fork on Tue, 06 Oct 2026, 13:53:36 UTC.** 
 
-Most nodes upgrade in place with no resync. There are **breaking changes** — read that section before upgrading, especially if you run an **archive node**, set custom **config keys**, or build against Nethermind as a **library or plu
+For most nodes this is an in-place upgrade with no resync. Read *Breaking changes* first if you run on the **flat** backend with a custom sync config, run **poacore**, run a **Flashbots relay**, parse **Parity-style traces**, or build **plugins** against Nethermind. **
+
+## Highlights
+
+- **Glamsterdam on 
 
 ---
 
