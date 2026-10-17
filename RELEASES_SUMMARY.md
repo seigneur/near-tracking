@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-10-02 00:02:15 UTC*
+*Last updated: 2026-10-17 00:02:06 UTC*
 
 ## Aztec CLI
 
@@ -52,25 +52,23 @@ Upgrade as soon as possible to avoid node downtime.
 
 ## Nethermind
 
-**Latest Version:** 2.1.0
+**Latest Version:** 2.2.0
 
-**Published:** 2026-10-01T22:43:39Z
+**Published:** 2026-10-16T16:26:20Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/2.1.0
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/2.2.0
 
 **Release Notes:**
 
 # Release notes
 
-359 merged pull requests since 2.0.0, from 29 contributors.
+586 merged pull requests since 2.1.0, from 31 contributors.
 
-> **Upgrade every Sepolia node to 2.1.0 before the Glamsterdam fork on Tue, 06 Oct 2026, 13:53:36 UTC.** 
+> [!IMPORTANT]
+> **Hoodi: Glamsterdam activates on Mon, 26 Oct 2026, 17:42:48 UTC** (timestamp `1793036568`, epoch `132352`). Hoodi nodes must run 2.2.0 or later before then. Your consensus client must support Glamsterdam on Hoodi as well.
 
-For most nodes this is an in-place upgrade with no resync. Read *Breaking changes* first if you run on the **flat** backend with a custom sync config, run **poacore**, run a **Flashbots relay**, parse **Parity-style traces**, or build **plugins** against Nethermind. **
-
-## Highlights
-
-- **Glamsterdam on 
+> [!NOTE]
+> **Upgrading from 2.0.x or 1.39.x?** The breaking changes below cover 2.1.0 → 2.2.0 only. Apply the [2.1.0 breaking changes](https://github.com/NethermindEth/neth
 
 ---
 
