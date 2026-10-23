@@ -1,30 +1,31 @@
 # Latest Releases
 
-*Last updated: 2026-10-17 00:02:06 UTC*
+*Last updated: 2026-10-23 00:02:21 UTC*
 
 ## Aztec CLI
 
-**Latest Version:** v5.2.0
+**Latest Version:** v6.0.0
 
-**Published:** 2026-08-17T08:53:53Z
+**Published:** 2026-10-22T12:20:46Z
 
-**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v5.2.0
+**URL:** https://github.com/AztecProtocol/aztec-packages/releases/tag/v6.0.0
 
 **Release Notes:**
 
 ```
-  ▁▂▃▅▇█▇▅▃▂▁▁▂▃▅▇█▇▅▃▂▁▁▂▃▅▇█▇▅▃▂▁▁▂▃▅▇█▇▅▃▂▁▁▂▃▅▇█▇▅▃▂▁
+   v5   L1 ▕░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▏ L2    24–108s
+   v6   L1 ▕████████▏ L2                          12–30s
 
-                   A Z T E C  ·  5 · 2 · 0
+                   A Z T E C  ·  6 · 0 · 0
 ```
 
-**Date:** 2026-08-17 · **Tag:** `v5.2.0` · **Baseline:** `v5.1.0` · Minor release
+**Date:** 2026-10-22 · **Tag:** `v6.0.0` · **Baseline:** `v5.2.1` · Major release
 
-Install: `aztec-up install 5.2.0` · Docker: `aztecprotocol/aztec:5.2.0`
+npm: `@aztec-foundation/bb.js@6.0.0` (note the new `@aztec-foundation` scope) · crates.io: `barretenberg-rs 6.0.0` · Noir: `v1.0.0-rc.3`
 
 ## Summary
 
-A maintenance release focused on running nodes: prover nodes use much less memory, epoch proving recovers from faults instead of giving up, p2p and mempool handling is hardened, and several L1 interactions stop wasting ga
+v6.0.0 is the protocol, proving system and L1 contracts behind the v6 rollup proposed i
 
 ---
 
@@ -52,23 +53,21 @@ Upgrade as soon as possible to avoid node downtime.
 
 ## Nethermind
 
-**Latest Version:** 2.2.0
+**Latest Version:** 2.2.1
 
-**Published:** 2026-10-16T16:26:20Z
+**Published:** 2026-10-22T19:41:22Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/2.2.0
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/2.2.1
 
 **Release Notes:**
 
+> [!IMPORTANT]
+**Hoodi node operators must upgrade before Mon, 26 Oct 2026, 17:42:48 UTC.** This release removes the Glamsterdam fork from Hoodi. A Hoodi node still on 2.2.0 will activate Glamsterdam at that time and fork off the network. Your consensus client must also be on a release that removes the Glamsterdam fork from Hoodi.
+> 
+
 # Release notes
 
-586 merged pull requests since 2.1.0, from 31 contributors.
-
-> [!IMPORTANT]
-> **Hoodi: Glamsterdam activates on Mon, 26 Oct 2026, 17:42:48 UTC** (timestamp `1793036568`, epoch `132352`). Hoodi nodes must run 2.2.0 or later before then. Your consensus client must support Glamsterdam on Hoodi as well.
-
-> [!NOTE]
-> **Upgrading from 2.0.x or 1.39.x?** The breaking changes below cover 2.1.0 → 2.2.0 only. Apply the [2.1.0 breaking changes](https://github.com/NethermindEth/neth
+A patch release on top of 2.2.0 that removes the Glamsterdam (Amsterdam) fork from Hoodi, which was planned for Mon, 26 Oct 2026, 17:42:48 U
 
 ---
 
