@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-10-23 00:02:21 UTC*
+*Last updated: 2026-10-27 00:02:12 UTC*
 
 ## Aztec CLI
 
@@ -31,43 +31,49 @@ v6.0.0 is the protocol, proving system and L1 contracts behind the v6 rollup pro
 
 ## NEAR Protocol
 
-**Latest Version:** 2.13.4
+**Latest Version:** 2.14.0
 
-**Published:** 2026-09-03T15:03:23Z
+**Published:** 2026-10-26T18:59:52Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.13.4
+**URL:** https://github.com/near/nearcore/releases/tag/2.14.0
 
 **Release Notes:**
 
 ```
-CODE_COLOR: CODE_RED_MAINNET, CODE_RED_TESTNET
-RELEASE_VERSION: 2.13.4
-PROTOCOL_UPGRADE: FALSE
-DATABASE_UPGRADE: FALSE
-SECURITY_UPGRADE: TRUE
+CODE_COLOR: CODE_YELLOW_MAINNET
+RELEASE_VERSION: 2.14.0
+PROTOCOL_UPGRADE: TRUE
+DATABASE_UPGRADE: TRUE
+SECURITY_UPGRADE: FALSE
 ```
-This release fixes critical flaws in nearcore that could cause node crash/DoS.
-Upgrade as soon as possible to avoid node downtime.
+
+# Protocol Changes
+* Remove gas rewards: executing a `FunctionCall` no longer pays part of the burned gas back to the contract account as a reward. The `burnt_gas_reward` parameter is changed from 30% (3/10) to 0%. See [HSP-027](https://gov.near.org/t/hsp-027-remove-the-near-developer-gas-rebate/42213)
+* Added an `ml_dsa_verify` host function so contracts can ver
 
 ---
 
 ## Nethermind
 
-**Latest Version:** 2.2.1
+**Latest Version:** 2.2.2
 
-**Published:** 2026-10-22T19:41:22Z
+**Published:** 2026-10-26T16:59:58Z
 
-**URL:** https://github.com/NethermindEth/nethermind/releases/tag/2.2.1
+**URL:** https://github.com/NethermindEth/nethermind/releases/tag/2.2.2
 
 **Release Notes:**
 
-> [!IMPORTANT]
-**Hoodi node operators must upgrade before Mon, 26 Oct 2026, 17:42:48 UTC.** This release removes the Glamsterdam fork from Hoodi. A Hoodi node still on 2.2.0 will activate Glamsterdam at that time and fork off the network. Your consensus client must also be on a release that removes the Glamsterdam fork from Hoodi.
-> 
-
 # Release notes
 
-A patch release on top of 2.2.0 that removes the Glamsterdam (Amsterdam) fork from Hoodi, which was planned for Mon, 26 Oct 2026, 17:42:48 U
+A patch release on top of 2.2.1 with the October 2026 out-of-band .NET security updates. See the [Microsoft announcement](https://devblogs.microsoft.com/dotnet/dotnet-october-2026-oob-security-updates/) for details of the fixed vulnerabilities.
+
+There are no Nethermind code, database-format, or configuration changes, so you can upgrade in place from any 2.2.x version. Consensus behavior and fork schedules are the same as in 2.2.1.
+
+## Overview
+
+2 changes since 2.2.1:
+
+
 
 ---
 
