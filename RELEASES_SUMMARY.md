@@ -1,6 +1,6 @@
 # Latest Releases
 
-*Last updated: 2026-10-27 00:02:12 UTC*
+*Last updated: 2026-11-12 00:01:28 UTC*
 
 ## Aztec CLI
 
@@ -31,25 +31,25 @@ v6.0.0 is the protocol, proving system and L1 contracts behind the v6 rollup pro
 
 ## NEAR Protocol
 
-**Latest Version:** 2.14.0
+**Latest Version:** 2.14.1
 
-**Published:** 2026-10-26T18:59:52Z
+**Published:** 2026-11-11T14:03:30Z
 
-**URL:** https://github.com/near/nearcore/releases/tag/2.14.0
+**URL:** https://github.com/near/nearcore/releases/tag/2.14.1
 
 **Release Notes:**
 
 ```
-CODE_COLOR: CODE_YELLOW_MAINNET
-RELEASE_VERSION: 2.14.0
-PROTOCOL_UPGRADE: TRUE
-DATABASE_UPGRADE: TRUE
-SECURITY_UPGRADE: FALSE
+CODE_COLOR: CODE_RED_MAINNET, CODE_RED_TESTNET
+RELEASE_VERSION: 2.14.1
+PROTOCOL_UPGRADE: FALSE
+DATABASE_UPGRADE: FALSE
+SECURITY_UPGRADE: TRUE
 ```
 
-# Protocol Changes
-* Remove gas rewards: executing a `FunctionCall` no longer pays part of the burned gas back to the contract account as a reward. The `burnt_gas_reward` parameter is changed from 30% (3/10) to 0%. See [HSP-027](https://gov.near.org/t/hsp-027-remove-the-near-developer-gas-rebate/42213)
-* Added an `ml_dsa_verify` host function so contracts can ver
+This release fixes critical flaws in nearcore that could cause node crash/DoS.
+Upgrade as soon as possible to avoid node downtime.
+
 
 ---
 
